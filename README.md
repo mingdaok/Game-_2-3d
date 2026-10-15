@@ -1,22 +1,24 @@
-# 折光遗迹：四向折叠中文试玩（0.5.0）
+# 折光遗迹：四向折叠中文试玩（火焰升级版）
 
 **素材声明：本项目并非全部美术自创。** 法师角色、动画和部分地牢模型来自 Kay Lousberg 的 KayKit；字体和引擎基础资源也属于第三方。项目脚本生成的内容，以及原工程继承、来源待核实的资源，分别列在 [美术与音效来源说明](Documentation/AssetCredits.md) 和 [逐文件来源清单](Documentation/AssetSources.csv) 中。第三方素材的转换、调色和场景组合不改变原作者归属。
 
 本版接入 KayKit CC0 冒险者角色与地牢美术包。默认主角为带帽子、披风、法杖的骨骼法师，支持待机、步行、跑步、起跳、空中、落地与上半身施法动画；五个房间使用 12 种地牢环境模型。素材来源、修改方式和许可见 `Documentation/ExternalAssets.md`。
 
-实机截图位于 `Documentation/ExternalArt`。可使用命令行参数 `-CandleHero` 查看保留的蜡烛角色外观。
+最新火焰实机截图位于 [Documentation/FireUpgrade](Documentation/FireUpgrade)，角色与场景截图位于 [Documentation/ExternalArt](Documentation/ExternalArt)。可使用命令行参数 `-CandleHero` 查看保留的程序几何蜡烛角色外观。
 
-第二轮打磨增加关卡专属布景、植物与风化细节，加入迈步、眨眼、披风摆动和施法动作，并把过亮的火团重做为可辨识范围的动态火印/火墙。
+当前版本的施法火环和火墙使用项目实现的 `M_FireFlow` 程序材质，加入分层火舌、火星、轻烟、暖光与渐隐。藤蔓燃烧仍调用原工程已有的 `Vefects/Free_Fire` Niagara 素材，两套效果的来源不同。
 
-本轮资源、动作与实现范围见 `Documentation/PolishNotes.md`，实机截图位于 `Documentation/Polish`。
+早期美术迭代记录见 [Documentation/PolishNotes.md](Documentation/PolishNotes.md) 和 [Documentation/ArtDirection.md](Documentation/ArtDirection.md)；素材归属以当前 [来源说明](Documentation/AssetCredits.md) 为准。
 
-本版加入原创遗迹拱廊、倒角石台、星盘传送门、晶体机关与细化蜡烛角色。环境和建模说明见 `Documentation/ArtDirection.md`。
+场景同时使用项目脚本生成的拱券、石台、圆环、晶体等几何，以及 KayKit 的地牢模型。默认法师模型和原始动作属于 KayKit，不属于项目自创；项目负责导入、材质调整、动画接入和场景组合，开发过程中使用 AI 辅助。
 
-本目录是独立 UE 5.7 项目。原项目 Source、Content、Config 均保留；`OriginalProject.sha256.json` 保存建立副本时的原文件校验值。
+## 下载与打开
 
-双击 `Launch_Playtest.bat` 进入试玩。若已有 Windows 打包版本，启动脚本会优先使用它；否则使用本机 UE 5.7 的游戏模式。
+试玩请下载 [Windows Release](https://github.com/mingdaok/Game-_2-3d/releases/tag/v0.5.1-fire) 中的 `Foldlight_Playtest_2026-10-15.zip`，完整解压后双击 `Start_Game.bat`，无需安装 UE 编辑器。包内 `Licenses` 附有素材来源说明和已收集的许可证。
 
-打开工程：`FoldlightDemo.uproject`。代码工作区：`FoldlightDemo.code-workspace`。
+本仓库是独立 UE 5.7 C++ 工程，资源使用 Git LFS。安装 Git LFS 后克隆仓库并执行 `git lfs pull`，再打开 `FoldlightDemo.uproject`；编译需要相应的 Visual Studio C++ 工具。仓库不包含生成缓存和 Windows 试玩二进制。
+
+工程内的 `Launch_Playtest.bat` 优先运行本地 `Build/Windows` 试玩包，否则尝试启动 UE。该脚本和构建脚本中的 UE 安装路径需要按开发者本机位置调整。
 
 ## 操作
 
@@ -58,19 +60,31 @@
 ## 开发与验证
 
 - 入口：`AFDGameMode`，地图 `/Game/Foldlight/Maps/Trial`。
-- 关卡在 `AFDWorld::BuildWorld` 中以确定性方式生成，编辑器空地图的游玩后才会看到房间。
+- 关卡在 `AFDWorld::BuildWorld` 中以确定性方式生成；打开地图后需开始游玩，才会看到完整房间。
 - `AFDObject` 管理来源碰撞、投影碰撞、燃烧、机关和轨道移动。
 - `AFDCharacter` 负责输入、角色、镜头与切换请求。
 - `AFDHUD` 提供标题、玩法提示、暂停和结算界面。
 - 旧C++和蓝图保留于副本中作参考；试玩的启动流程使用新的FD类。
-- `Tools/make_audio.py` 合成原创音效。`Tools/build_content.py` 通过UE Python生成试玩专用材质、导入音效并创建入口地图，仅写入 `/Game/Foldlight`；命令行运行时需附加 `-AllowCommandletAudio`。
+- `Tools/make_audio.py` 通过波形和噪声合成 `S_Fold`、`S_Fire`、`S_Restore` 三段音效，此说明不覆盖第三方资源包内的音频。`Tools/build_content.py` 通过UE Python生成试玩专用材质、导入音效并创建入口地图，仅写入 `/Game/Foldlight`；命令行运行时需附加 `-AllowCommandletAudio`。
+- `Tools/build_fire_vfx.py` 生成升级后的施法火焰材质；`FDWorld.cpp` 控制火环、火墙、火星和轻烟的排列与动画。
 - `Tools/Build_Editor.bat` 编译编辑器模块；`Tools/Package_Windows.bat` 打包Windows。
 - `-FoldlightSmoke` 启动自动场景功能验证，日志搜索 `FOLDLIGHT_TEST`。该验证不写玩家存档。
 - `-FoldlightTraversal` 通过真实角色移动与跳跃物理、施法和交互走完五关；不同于机制测试中的场景定位，它不传送玩家跨越谜题。
 - `-FoldlightCapture -CaptureRoom=0` 自动截图；附加 `-Capture2D` 截取2D状态。该模式不写玩家存档。
 - 附加 `-CaptureView=0/1/2/3` 分别检查南/东/北/西视角，第五关截图会定位到对应祭台。四向设计详见 `Documentation/FourDirections.md`。
 
-美术：蜡人角色和遗迹结构使用本项目程序生成几何与原创配色；火焰表现复用原项目已有的 Vefects/Free_Fire 素材。折叠、施法和过关音效为原创合成音。未引入新的第三方下载资源。
+## 美术与音效归属
+
+| 类型 | 内容与归属 |
+| --- | --- |
+| 第三方角色与场景 | 法师角色、骨骼、配件、原始动画，以及部分地牢模型和图集来自 Kay Lousberg 的 KayKit，所用两个包随附 CC0 许可。格式转换、调色和组合不改变原作者归属。 |
+| 项目脚本生成 | `Tools/make_models.py` 生成的部分几何、项目表面材质、升级后的施法火焰及三段合成音效具有对应脚本；开发有 AI 辅助，不表述为全部人工手工制作。 |
+| 原工程继承 | `Vefects/Free_Fire`、`SciFITrooper_Man_03`、`Fab/Megascans` 等保留资源不标为原创，其原作者、具体来源或许可仍有待核实项；藤蔓燃烧仍实际使用 Free_Fire。 |
+| 字体与引擎资源 | DroidSansFallback 字体来自 Android Open Source Project，经 UE 导入；基础几何体与引擎资源来自 Unreal Engine，不属于项目自创。 |
+
+完整来源、改动范围和许可证位置见 [AssetCredits.md](Documentation/AssetCredits.md)，逐文件定位见 [AssetSources.csv](Documentation/AssetSources.csv)。KayKit 的 CC0 许可仅适用于相应素材，不代表整个工程或全部继承资源采用 CC0；来源标注也不等于已核实所有继承资源的再分发许可。
+
+## 中文界面与当前范围
 
 游戏内菜单、关卡名称、目标、操作说明、机关反馈、三级提示、暂停、结算和窗口标题均为简体中文，保留实际键帽字母。中文字体随游戏包内嵌，无需安装系统字体。
 
