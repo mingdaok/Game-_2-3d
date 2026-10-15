@@ -1,0 +1,12 @@
+[
+  {
+    "pack": "KayKitAdventurers",
+    "sha256": "e19176d799036452bc783c00dd1036e158c66c5a43b7285ccbfea3466d6f57bf",
+    "bytes": 6141833
+  },
+  {
+    "pack": "KayKitDungeon",
+    "sha256": "8e92aa460f5be4252dff0cf030f92846ab74b875ce4756076ecce75b5d0c9bee",
+    "bytes": 6312130
+  }
+]

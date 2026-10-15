@@ -1,0 +1,236 @@
+[
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_barrel_large_decorated.SM_KK_barrel_large_decorated",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F0240) {origin: {x: 5.028366, y: 0.902805, z: 127.623583}, box_extent: {x: 96.897850, y: 92.772221, z: 127.822661}, sphere_radius: 158.238647}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_barrel_small_stack.SM_KK_barrel_small_stack",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F1D80) {origin: {x: -0.000122, y: 0.000004, z: 88.506988}, box_extent: {x: 92.507011, y: 50.000004, z: 88.506913}, sphere_radius: 113.617663}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_candle_triple.SM_KK_candle_triple",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F7C80) {origin: {x: 8.340380, y: 3.543549, z: 43.649101}, box_extent: {x: 25.058931, y: 19.496208, z: 43.649101}, sphere_radius: 51.309439}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_pillar_decorated.SM_KK_pillar_decorated",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F7600) {origin: {x: 0.000191, y: 10.508194, z: 200.000000}, box_extent: {x: 111.600128, y: 85.508186, z: 200.000000}, sphere_radius: 219.260494}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_rubble_large.SM_KK_rubble_large",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F7840) {origin: {x: -0.421982, y: 0.590065, z: 174.804398}, box_extent: {x: 406.463699, y: 159.155479, z: 174.804398}, sphere_radius: 445.840826}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_shelf_small_candles.SM_KK_shelf_small_candles",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F4E80) {origin: {x: -0.000002, y: 24.999999, z: 19.709929}, box_extent: {x: 49.999998, y: 25.000001, z: 49.709931}, sphere_radius: 63.306237}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_shelves.SM_KK_shelves",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F4E00) {origin: {x: 0.000000, y: 50.000000, z: 172.499985}, box_extent: {x: 100.000000, y: 25.000000, z: 97.499985}, sphere_radius: 141.884626}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_table_small_decorated_A.SM_KK_table_small_decorated_A",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F65C0) {origin: {x: -2.032740, y: -1.556038, z: 81.064987}, box_extent: {x: 51.950846, y: 60.561954, z: 81.064987}, sphere_radius: 104.051299}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_torch_mounted.SM_KK_torch_mounted",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F4380) {origin: {x: 0.000514, y: 30.792024, z: 15.042633}, box_extent: {x: 27.514165, y: 30.792025, z: 53.123337}, sphere_radius: 56.910091}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_wall_arched.SM_KK_wall_arched",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F7DC0) {origin: {x: -0.000015, y: 0.000032, z: 200.000000}, box_extent: {x: 200.000015, y: 50.000029, z: 200.000000}, sphere_radius: 287.228148}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_wall_archedwindow_open.SM_KK_wall_archedwindow_open",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F3E00) {origin: {x: 0.000000, y: 0.000000, z: 200.000000}, box_extent: {x: 200.000000, y: 50.000000, z: 200.000000}, sphere_radius: 287.228132}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Environment/SM_KK_wall_broken.SM_KK_wall_broken",
+    "class": "StaticMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F5A00) {origin: {x: 0.000000, y: 0.000000, z: 200.000000}, box_extent: {x: 200.000000, y: 49.999996, z: 200.000000}, sphere_radius: 287.228132}>"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/barrel_large_decorated/barrel_large_decorated_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/barrel_large_decorated/barrel_large_decorated_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/barrel_small_stack/barrel_small_stack_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/barrel_small_stack/barrel_small_stack_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/candle_triple/candle_triple_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/candle_triple/candle_triple_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/pillar_decorated/pillar_decorated_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/pillar_decorated/pillar_decorated_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/rubble_large/rubble_large_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/rubble_large/rubble_large_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/shelf_small_candles/shelf_small_candles_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/shelf_small_candles/shelf_small_candles_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/shelves/shelves_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/shelves/shelves_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/table_small_decorated_A/table_small_decorated_A_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/table_small_decorated_A/table_small_decorated_A_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/torch_mounted/torch_mounted_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/torch_mounted/torch_mounted_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/wall_arched/wall_arched_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/wall_arched/wall_arched_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/wall_archedwindow_open/wall_archedwindow_open_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/wall_archedwindow_open/wall_archedwindow_open_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/wall_broken/wall_broken_gltf/Materials/texture.texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Imports/wall_broken/wall_broken_gltf/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/M_KK_Dungeon.M_KK_Dungeon",
+    "class": "Material"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/M_KK_Mage.M_KK_Mage",
+    "class": "Material"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/Materials/mage_texture.mage_texture",
+    "class": "MaterialInstanceConstant"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/Mage.Mage",
+    "class": "SkeletalMesh",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001BCB81F46C0) {origin: {x: -4.102261, y: 11.855156, z: 135.781083}, box_extent: {x: 108.747692, y: 113.570160, z: 135.783736}, sphere_radius: 207.753375}>",
+    "skeleton": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/Mage_Skeleton.Mage_Skeleton"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/Mage_PhysicsAsset.Mage_PhysicsAsset",
+    "class": "PhysicsAsset"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/Mage_Skeleton.Mage_Skeleton",
+    "class": "Skeleton"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/MageIdle.MageIdle",
+    "class": "AnimSequence",
+    "length": 1.0666667222976685
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/MageInteract.MageInteract",
+    "class": "AnimSequence",
+    "length": 1.2999999523162842
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/MageJump_Idle.MageJump_Idle",
+    "class": "AnimSequence",
+    "length": 1.0666667222976685
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/MageJump_Land.MageJump_Land",
+    "class": "AnimSequence",
+    "length": 0.6666666865348816
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/MageJump_Start.MageJump_Start",
+    "class": "AnimSequence",
+    "length": 0.6000000238418579
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/MageRunning_A.MageRunning_A",
+    "class": "AnimSequence",
+    "length": 0.800000011920929
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/MageSpellcast_Shoot.MageSpellcast_Shoot",
+    "class": "AnimSequence",
+    "length": 0.9333333373069763
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/SkeletalMeshes/MageWalking_A.MageWalking_A",
+    "class": "AnimSequence",
+    "length": 1.0666667222976685
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Mage/Mage/Textures/mage_texture.mage_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Textures/dungeon_texture.dungeon_texture",
+    "class": "Texture2D"
+  },
+  {
+    "path": "/Game/Foldlight/External/KayKit/Textures/mage_texture.mage_texture",
+    "class": "Texture2D"
+  }
+]

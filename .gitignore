@@ -1,0 +1,17 @@
+/Binaries/
+/Build/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/Deliverables/
+.vs/
+.vscode/
+**/.git/
+*.sln
+*.suo
+*.pdb
+*.log
+*.tmp
+*.zip
+.env
+.env.*
