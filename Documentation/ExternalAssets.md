@@ -2,7 +2,7 @@
 
 ## 来源与许可
 
-使用 Kay Lousberg / KayKit 官方仓库的免费版本。两个包均附 CC0 1.0 Universal 许可，作者明确允许个人及商业用途。没有使用付费扩展、商城抓取资源或来源不明模型。
+本节记录新增使用的 Kay Lousberg / KayKit 官方仓库免费版本，两个包均附 CC0 1.0 Universal 许可。这里的来源与许可结论仅覆盖这两个 KayKit 包，不覆盖原工程继承的 Free_Fire、SciFITrooper、Fab / Megascans 等内容。完整分类和待核实项见 [美术与音效来源说明](AssetCredits.md)。
 
 - [KayKit Character Pack: Adventurers 1.0](https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Adventures-1.0)：Mage 模型、骨骼、帽子、披风、法杖、动画和原始渐变色图集。
 - [KayKit Dungeon Remastered 1.0](https://github.com/KayKit-Game-Assets/KayKit-Dungeon-Remastered-1.0)：雕花石柱、拱墙、破墙、拱窗、壁炬、蜡烛架、装饰桌、木桶、桶堆、三联蜡烛、碎石和置物架，共 12 种环境模型及原始图集。

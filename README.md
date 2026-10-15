@@ -1,5 +1,7 @@
 # 折光遗迹：四向折叠中文试玩（0.5.0）
 
+**素材声明：本项目并非全部美术自创。** 法师角色、动画和部分地牢模型来自 Kay Lousberg 的 KayKit；字体和引擎基础资源也属于第三方。项目脚本生成的内容，以及原工程继承、来源待核实的资源，分别列在 [美术与音效来源说明](Documentation/AssetCredits.md) 和 [逐文件来源清单](Documentation/AssetSources.csv) 中。第三方素材的转换、调色和场景组合不改变原作者归属。
+
 本版接入 KayKit CC0 冒险者角色与地牢美术包。默认主角为带帽子、披风、法杖的骨骼法师，支持待机、步行、跑步、起跳、空中、落地与上半身施法动画；五个房间使用 12 种地牢环境模型。素材来源、修改方式和许可见 `Documentation/ExternalAssets.md`。
 
 实机截图位于 `Documentation/ExternalArt`。可使用命令行参数 `-CandleHero` 查看保留的蜡烛角色外观。
